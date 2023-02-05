@@ -1,113 +1,146 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Twitter/Explore</title>
-    <link href="index.css" 
-          rel="stylesheet"/>
+    <link href="index.css" s rel="stylesheet" />
+
 </head>
 
 <body>
+    <div class="wd-head_1">
+        <div class="wd-header_search">
+            <div></div>
+            <input class="wd-search_bar" placeholder="Search Tuiter">
 
-<div class="grid-container">
-    <div class="grid-item ">
-        <form id="text-fields">
-        <input type="text" id="search-button" placeholder="Search Twitter" class="rounded-search-button">
-        </form>
-    </div>
-    <div>
-   <a href="explore-settings.html" ><img src="images/gear-icon.jpeg" width="40" height="40" class="icon-container"></a>
-    </div>
-  </div>
-  <div class="grid-container">
-    <div class="grid-item ">
-    <div style="display: flex">
-    <p class="highlighed-font">For you</p>
-    <p class="other-font">Trending</p>
-    <p class="other-font">COVID-19</p>
-    <p class="other-font">News</p>
-    <p class="other-font">Sports</p>
-    <p class="other-font">Entertainment</p>
-          </div>
-    <hr class="highlighted-link">
-    <hr class="hr1">
-    </div>
-    </div>  
-    <br/>
-    <div class="grid-container">
-    <div class="grid-item-2 ">
-    <p class="suggested-font">Trending in Science</p>
-    <p class="trending-font">Pfizer Vaccine</p>
-    <p class="count-font">1.2M Tweets</p>
-    </div> 
-    </div> 
-    <br/>
-    <div class="trending_space"></div>
-    <div class="grid-container">
-    <div class="grid-item-2 ">
-    <p class="suggested-font">Sports &middot; Trending</p>
-    <p class="trending-font">Boston Celtics</p>
-    <p class="count-font">600.4K Tweets</p>
-    </div>   
-    </div> 
-    <br/> 
-    <div class="trending_space"></div>
-    <div class="grid-container-2">
-    <div class="grid-item-2">
-       <hr class="hr2">
-       <div class="author-container">
-       <div class="author-font">The New York Times &#10004;</div> 
-       <div class="suggested-font">&middot; Today
-        </div> 
-       </div>
-       <p class="trending-font">Temperatures continue plummeting in New Hampshire </p>
-       <p class="headlines-font">as cold air mass grips state</p>
-    </div>  
-    <img class="news-container news_img" src="images/nh-news.webp" width="80"> 
-    </div>
-    <br/> 
-    <div class="trending_space"></div>
-    <div class="grid-container-2">
-    <div class="grid-item-2">
-       <hr class="hr2">
-       <div class="author-container">
-        <div class="author-font">Yahoo Finance &#10004;</div> 
-        <div class="suggested-font">&middot; Yesterday
-         </div> 
+            </input>
+            <a href="explore-settings.html"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="black"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.4 5.6C10.4 4.84575 10.4 4.46863 10.6343 4.23431C10.8686 4 11.2458 4 12 4C12.7542 4 13.1314 4 13.3657 4.23431C13.6 4.46863 13.6 4.84575 13.6 5.6V6.6319C13.9725 6.74275 14.3287 6.8913 14.6642 7.07314L15.3942 6.34315C15.9275 5.80982 16.1942 5.54315 16.5256 5.54315C16.8569 5.54315 17.1236 5.80982 17.6569 6.34315C18.1903 6.87649 18.4569 7.14315 18.4569 7.47452C18.4569 7.80589 18.1903 8.07256 17.6569 8.60589L16.9269 9.33591C17.1087 9.67142 17.2573 10.0276 17.3681 10.4H18.4C19.1542 10.4 19.5314 10.4 19.7657 10.6343C20 10.8686 20 11.2458 20 12C20 12.7542 20 13.1314 19.7657 13.3657C19.5314 13.6 19.1542 13.6 18.4 13.6H17.3681C17.2573 13.9724 17.1087 14.3286 16.9269 14.6641L17.6569 15.3941C18.1902 15.9275 18.4569 16.1941 18.4569 16.5255C18.4569 16.8569 18.1902 17.1235 17.6569 17.6569C17.1236 18.1902 16.8569 18.4569 16.5255 18.4569C16.1942 18.4569 15.9275 18.1902 15.3942 17.6569L14.6642 16.9269C14.3286 17.1087 13.9724 17.2573 13.6 17.3681V18.4C13.6 19.1542 13.6 19.5314 13.3657 19.7657C13.1314 20 12.7542 20 12 20C11.2458 20 10.8686 20 10.6343 19.7657C10.4 19.5314 10.4 19.1542 10.4 18.4V17.3681C10.0276 17.2573 9.67142 17.1087 9.33591 16.9269L8.60598 17.6569C8.07265 18.1902 7.80598 18.4569 7.47461 18.4569C7.14324 18.4569 6.87657 18.1902 6.34324 17.6569C5.80991 17.1235 5.54324 16.8569 5.54324 16.5255C5.54324 16.1941 5.80991 15.9275 6.34324 15.3941L7.07314 14.6642C6.8913 14.3287 6.74275 13.9725 6.6319 13.6H5.6C4.84575 13.6 4.46863 13.6 4.23431 13.3657C4 13.1314 4 12.7542 4 12C4 11.2458 4 10.8686 4.23431 10.6343C4.46863 10.4 4.84575 10.4 5.6 10.4H6.6319C6.74275 10.0276 6.8913 9.67135 7.07312 9.33581L6.3432 8.60589C5.80987 8.07256 5.5432 7.80589 5.5432 7.47452C5.5432 7.14315 5.80987 6.87648 6.3432 6.34315C6.87654 5.80982 7.1432 5.54315 7.47457 5.54315C7.80594 5.54315 8.07261 5.80982 8.60594 6.34315L9.33588 7.07308C9.6714 6.89128 10.0276 6.74274 10.4 6.6319V5.6Z"
+                        stroke=rgb(29,161,242) stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M14.4 12C14.4 13.3255 13.3255 14.4 12 14.4C10.6745 14.4 9.6 13.3255 9.6 12C9.6 10.6745 10.6745 9.6 12 9.6C13.3255 9.6 14.4 10.6745 14.4 12Z"
+                        stroke=rgb(29,161,242) stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
         </div>
-       <p class="trending-font">Tesla raises Model Y pricing following federal tax credit</p>
-       <p class="headlines-font">change</p></p>
-    </div>  
-    <img class="news-container news_img" src="images/tesla.webp" width="80"> 
-    </div> 
-    <br/> 
-    <div class="trending_space"></div>
-    <div class="grid-container-2">
-    <div class="grid-item-2">
-       <hr class="hr2">
-       <div class="author-container">
-        <div class="author-font">FIFA World Cup </div> 
-        <div class="suggested-font">&middot; LIVE
-         </div> 
+        <div class="wd-tabs">
+            <p class="wd-blue_tab">For you</p>
+            <p>Trending</p>
+            <p>COVID-19</p>
+            <p>News</p>
+            <p>Sports</p>
+            <p>US</p>
         </div>
-       <p class="trending-font">Qatar World Cup 2022: Argentina defeat France to</p>
-       <p class="headlines-font">clinch their first world Cup title since 1986</p></p>
-    </div>  
-    <img class="news-container news_img" src="images/qatar.jpeg" width="80"> 
-    </div> 
-    <br/>
-    <div class="trending_space"></div>
-    <div class="grid-container">
-    <div class="grid-item-2 ">
-        <hr class="hr2">
-    <p class="suggested-font">Trending in United States</p>
-    <p class="trending-font">Mass Shooting</p>
-    <p class="count-font">3.7M Tweets</p>
-    </div> 
+        <div class="wd-break_line"></div>
+        <div
+            style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column;">
+                <p3>Trending in science</p3>
+                <p3 style="font-weight: bold; font-size: medium; color: aliceblue;">Pfizer Vaccine</p3>
+                <p3>1.2M Tweets</p3>
+            </div>
+            <svg fill="#5F6368" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12,10a2,2,0,1,1-2,2A2,2,0,0,1,12,10ZM4,14a2,2,0,1,0-2-2A2,2,0,0,0,4,14Zm16-4a2,2,0,1,0,2,2A2,2,0,0,0,20,10Z" />
+            </svg>
+        </div>
+        <div
+            style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column;">
+                <p3>Sports . Trending</p3>
+                <p3 style="font-weight: bold; font-size: medium; color: aliceblue;">Boston Celtics</p3>
+                <p3>451.2K Tweets</p3>
+            </div>
+            <svg fill="#5F6368" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12,10a2,2,0,1,1-2,2A2,2,0,0,1,12,10ZM4,14a2,2,0,1,0-2-2A2,2,0,0,0,4,14Zm16-4a2,2,0,1,0,2,2A2,2,0,0,0,20,10Z" />
+            </svg>
+        </div>
+        <div class="wd-break_line1"></div>
+        <div
+            style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; width: 80%;">
+                <div style="display: flex; align-content: center;">
+                    <svg fill="#ffffff" width="12px" height="12px" viewBox="0 0 24 24" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>New York Times icon</title>
+                        <path
+                            d="M21.272,14.815h-0.098c-0.747,2.049-2.335,3.681-4.363,4.483v-4.483l2.444-2.182l-2.444-2.182V7.397 c2.138,0.006,3.885-1.703,3.927-3.84c0-2.629-2.509-3.556-3.927-3.556c-0.367-0.007-0.734,0.033-1.091,0.12v0.131h0.556 c0.801-0.141,1.565,0.394,1.706,1.195C17.99,1.491,17.996,1.537,18,1.583c-0.033,0.789-0.7,1.401-1.488,1.367 c-0.02-0.001-0.041-0.002-0.061-0.004c-2.444,0-5.323-1.985-8.454-1.985C5.547,0.83,3.448,2.692,3.284,5.139 C3.208,6.671,4.258,8.031,5.76,8.346v-0.12C5.301,7.931,5.041,7.407,5.084,6.862c0.074-1.015,0.957-1.779,1.973-1.705 C7.068,5.159,7.08,5.16,7.091,5.161c2.629,0,6.872,2.182,9.501,2.182h0.098v3.142l-2.444,2.182l2.444,2.182v4.549 c-0.978,0.322-2.003,0.481-3.033,0.469c-1.673,0.084-3.318-0.456-4.614-1.516l4.429-1.985V7.451l-6.196,2.727 c0.592-1.75,1.895-3.168,3.589-3.905V6.175c-4.516,1.004-8.138,4.243-8.138,8.705c0,5.193,4.025,9.12,9.818,9.12 c6.011,0,8.727-4.363,8.727-8.814V14.815z M8.858,18.186c-1.363-1.362-2.091-3.235-2.007-5.16c-0.016-0.88,0.109-1.756,0.371-2.596 l2.051-0.938v8.476L8.858,18.186z" />
+                    </svg>
+                    <p3
+                        style="font-weight: bold; font-size: small; color: aliceblue; margin-left: 5px; margin-right: 5px; align-content: center;">
+                        The New york times</p3>
+                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.007 8.27C22.194 9.125 23 10.45 23 12c0 1.55-.806 2.876-1.993 3.73.24 1.442-.134 2.958-1.227 4.05-1.095 1.095-2.61 1.459-4.046 1.225C14.883 22.196 13.546 23 12 23c-1.55 0-2.878-.807-3.731-1.996-1.438.235-2.954-.128-4.05-1.224-1.095-1.095-1.459-2.611-1.217-4.05C1.816 14.877 1 13.551 1 12s.816-2.878 2.002-3.73c-.242-1.439.122-2.955 1.218-4.05 1.093-1.094 2.61-1.467 4.057-1.227C9.125 1.804 10.453 1 12 1c1.545 0 2.88.803 3.732 1.993 1.442-.24 2.956.135 4.048 1.227 1.093 1.092 1.468 2.608 1.227 4.05Zm-4.426-.084a1 1 0 0 1 .233 1.395l-5 7a1 1 0 0 1-1.521.126l-3-3a1 1 0 0 1 1.414-1.414l2.165 2.165 4.314-6.04a1 1 0 0 1 1.395-.232Z"
+                            fill="#5F6368" />
+                    </svg>
+                    <p3 style="display: flex; align-items: center;"> &middot; Yesterday</p3>
+                </div>
 
+                <p3 style="font-weight: bold; font-size: medium; color: aliceblue; margin-top: 5px;">Temperatures
+                    continue plummeting in New Hampshire as cold air mass grips state.</p3>
+            </div>
+            <img srcset="./images/nh-news.webp">
+        </div>
+        <div class="wd-break_line1"></div>
+        <div
+            style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; width: 80%;">
+                <div style="display: flex; align-content: center;">
+                    <p3 style="display: flex; align-items: center;">FIFA World Cup &middot; LIVE</p3>
+                </div>
+
+                <p3 style="font-weight: bold; font-size: medium; color: aliceblue; margin-top: 5px;">Qatar World Cup
+                    2022: Argentina defeat France to clinch their first world Cup title since 1986</p3>
+            </div>
+            <img srcset="./images/qatar.jpeg">
+        </div>
+        <div class="wd-break_line1"></div>
+        <div
+            style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; width: 80%;">
+                <div style="display: flex; align-content: center;">
+                    <svg fill="#ffffff" width="12px" height="12px" viewBox="0 0 24 24" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>New York Times icon</title>
+                        <path
+                            d="M21.272,14.815h-0.098c-0.747,2.049-2.335,3.681-4.363,4.483v-4.483l2.444-2.182l-2.444-2.182V7.397 c2.138,0.006,3.885-1.703,3.927-3.84c0-2.629-2.509-3.556-3.927-3.556c-0.367-0.007-0.734,0.033-1.091,0.12v0.131h0.556 c0.801-0.141,1.565,0.394,1.706,1.195C17.99,1.491,17.996,1.537,18,1.583c-0.033,0.789-0.7,1.401-1.488,1.367 c-0.02-0.001-0.041-0.002-0.061-0.004c-2.444,0-5.323-1.985-8.454-1.985C5.547,0.83,3.448,2.692,3.284,5.139 C3.208,6.671,4.258,8.031,5.76,8.346v-0.12C5.301,7.931,5.041,7.407,5.084,6.862c0.074-1.015,0.957-1.779,1.973-1.705 C7.068,5.159,7.08,5.16,7.091,5.161c2.629,0,6.872,2.182,9.501,2.182h0.098v3.142l-2.444,2.182l2.444,2.182v4.549 c-0.978,0.322-2.003,0.481-3.033,0.469c-1.673,0.084-3.318-0.456-4.614-1.516l4.429-1.985V7.451l-6.196,2.727 c0.592-1.75,1.895-3.168,3.589-3.905V6.175c-4.516,1.004-8.138,4.243-8.138,8.705c0,5.193,4.025,9.12,9.818,9.12 c6.011,0,8.727-4.363,8.727-8.814V14.815z M8.858,18.186c-1.363-1.362-2.091-3.235-2.007-5.16c-0.016-0.88,0.109-1.756,0.371-2.596 l2.051-0.938v8.476L8.858,18.186z" />
+                    </svg>
+                    <p3
+                        style="font-weight: bold; font-size: small; color: aliceblue; margin-left: 5px; margin-right: 5px; align-content: center;">
+                        Bloomberg Opinion</p3>
+                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.007 8.27C22.194 9.125 23 10.45 23 12c0 1.55-.806 2.876-1.993 3.73.24 1.442-.134 2.958-1.227 4.05-1.095 1.095-2.61 1.459-4.046 1.225C14.883 22.196 13.546 23 12 23c-1.55 0-2.878-.807-3.731-1.996-1.438.235-2.954-.128-4.05-1.224-1.095-1.095-1.459-2.611-1.217-4.05C1.816 14.877 1 13.551 1 12s.816-2.878 2.002-3.73c-.242-1.439.122-2.955 1.218-4.05 1.093-1.094 2.61-1.467 4.057-1.227C9.125 1.804 10.453 1 12 1c1.545 0 2.88.803 3.732 1.993 1.442-.24 2.956.135 4.048 1.227 1.093 1.092 1.468 2.608 1.227 4.05Zm-4.426-.084a1 1 0 0 1 .233 1.395l-5 7a1 1 0 0 1-1.521.126l-3-3a1 1 0 0 1 1.414-1.414l2.165 2.165 4.314-6.04a1 1 0 0 1 1.395-.232Z"
+                            fill="#5F6368" />
+                    </svg>
+                    <p3 style="display: flex; align-items: center;"> &middot; Today</p3>
+                </div>
+
+                <p3 style="font-weight: bold; font-size: medium; color: aliceblue; margin-top: 5px;">Tesla raises Model
+                    Y pricing following federal tax credit change.</p3>
+            </div>
+            <img srcset="./images/tesla.webp">
+        </div>
+        <div class="wd-break_line1"></div>
+        <div
+            style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column;">
+                <p3>Trending in United States</p3>
+                <p3 style="font-weight: bold; font-size: medium; color: aliceblue;">Mass Shooting</p3>
+                <p3>5.7M Tweets</p3>
+            </div>
+            <svg fill="#5F6368" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12,10a2,2,0,1,1-2,2A2,2,0,0,1,12,10ZM4,14a2,2,0,1,0-2-2A2,2,0,0,0,4,14Zm16-4a2,2,0,1,0,2,2A2,2,0,0,0,20,10Z" />
+            </svg>
+        </div>
+        <div class="wd-break_line1"></div>
+    </div>
 </body>
-
 
 </html>
