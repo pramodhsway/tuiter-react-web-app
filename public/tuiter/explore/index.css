@@ -21,6 +21,12 @@
     z-index: 3;
 }
 
+.wd-icon-style {
+    display: flex;
+    flex-direction: row;
+    text-align:center
+}
+
 .wd-trend-style {
     display: flex;
     flex-direction: column;
