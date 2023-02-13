@@ -24,7 +24,7 @@
 .wd-icon-style {
     display: flex;
     flex-direction: row;
-    text-align:center
+    text-align: center
 }
 
 .wd-trend-style {
@@ -41,10 +41,10 @@
     justify-content: left;
 }
 
-.wd-disclaimer{
- font-size: 12px;
- color:#9a9a9a;
- justify-content: space-between;
+.wd-disclaimer {
+    font-size: 12px;
+    color: #9a9a9a;
+    justify-content: space-between;
 }
 
 
@@ -87,7 +87,8 @@ body {
 
 .wd-user-text {
     font-size: 14px;
-    color: #9a9a9a;;
+    color: #9a9a9a;
+    ;
 }
 
 .btn-primary {
@@ -118,30 +119,37 @@ body {
     font-weight: bold;
 }
 
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #9a9a9a;;
-    opacity: 1; /* Firefox */
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9a9a9a;
+    ;
+    opacity: 1;
+    /* Firefox */
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #9a9a9a;;
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #9a9a9a;
+    ;
 }
 
-.form-control::-ms-input-placeholder { /* Microsoft Edge */
-    color: #9a9a9a;;
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #9a9a9a;
+    ;
 }
 
-.wd-trending-topic{
+.wd-trending-topic {
     color: #000000;
     font-weight: bold;
     font-size: 15px;
     text-decoration: underline solid;
-    text-decoration-color: #1DA1F2;  
+    text-decoration-color: #1DA1F2;
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
 }
 
-.wd-other-topics{
+.wd-other-topics {
     color: #696969;
     font-weight: normal;
     font-size: 15px;
@@ -165,13 +173,13 @@ body {
 
 
 .border-1 {
-    border-width:0.05em !important;
+    border-width: 0.05em !important;
 }
 
 
-.border-gray{
-   border-color: #f7f9f9 !important;
-   border-width: 2px !important;
+.border-gray {
+    border-color: #f7f9f9 !important;
+    border-width: 2px !important;
 }
 
 a:link {
