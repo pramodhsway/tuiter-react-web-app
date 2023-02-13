@@ -1,0 +1,191 @@
+.wd-search-icon {
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 12px);
+    pointer-events: none;
+    color: #585858;
+    z-index: 3;
+}
+
+.wd-settings-icon {
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+
+.wd-caption {
+    position: relative;
+    bottom: 1px;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.wd-icon-style {
+    display: flex;
+    flex-direction: row;
+    text-align:center
+}
+
+.wd-trend-style {
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-disclaimer-style {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: -10px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.wd-disclaimer{
+ font-size: 12px;
+ color:#9a9a9a;
+ justify-content: space-between;
+}
+
+
+input {
+    text-indent: 25px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.wd-gray-text {
+    font-size: 13px;
+    color: #5F6368;
+    font-weight: normal;
+}
+
+.wd-news-text {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.wd-follow-text {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-user-text {
+    font-size: 14px;
+    color: #9a9a9a;;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1DA1F2;
+    border-color: #1DA1F2
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #1DA1F2;
+    border-color: #1DA1F2
+}
+
+.wd-icon-text {
+    font-size: 15px;
+    padding-top: 2px;
+    padding-left: 5px;
+    color: #504f4f;
+    font-weight: normal;
+}
+
+.wd-highligted-icon-text {
+    font-size: 15px;
+    padding-top: 2px;
+    padding-left: 7px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9a9a9a;;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9a9a9a;;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #9a9a9a;;
+}
+
+.wd-trending-topic{
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline solid;
+    text-decoration-color: #1DA1F2;  
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.wd-other-topics{
+    color: #696969;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+.btn-success {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+}
+
+.btn-success:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000
+}
+
+
+.border-1 {
+    border-width:0.05em !important;
+}
+
+
+.border-gray{
+   border-color: #f7f9f9 !important;
+   border-width: 2px !important;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
