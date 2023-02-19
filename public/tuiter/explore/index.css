@@ -46,19 +46,19 @@ img {
 
 .wd-gray-text {
     font-size: 13px;
-    color: #5F6368;
+    color: #ffffff;
     font-weight: normal;
 }
 
 .wd-news-text {
     font-size: 14px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .wd-follow-text {
     font-size: 14px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -72,7 +72,7 @@ body {
 
 .wd-user-text {
     font-size: 14px;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 a:link {
@@ -89,4 +89,8 @@ a:hover {
 
 a:active {
     text-decoration: none;
+}
+
+.wd-follow-background{
+    background-color: rgb(231, 233, 234, 0.1)
 }
