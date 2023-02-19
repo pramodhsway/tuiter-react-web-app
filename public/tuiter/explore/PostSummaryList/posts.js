@@ -21,4 +21,13 @@ export default [
         time: '15h',
         image: 'images/tesla.webp',
         tweets: '122K',
-    },];
+    },
+        {
+        topic: 'Web Development',
+        userName: 'jQuery',
+        title: '',
+        time: 'last month',
+        image: 'images/jquery.gif',
+        tweets: '178',
+    },
+];
