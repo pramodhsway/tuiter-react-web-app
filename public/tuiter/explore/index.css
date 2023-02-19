@@ -3,7 +3,7 @@
     left: 10px;
     top: calc(50% - 12px);
     pointer-events: none;
-    color: #585858;
+    color: #000000;
     z-index: 3;
 }
 
@@ -46,7 +46,7 @@ img {
 
 .wd-gray-text {
     font-size: 13px;
-    color: #ffffff;
+    color: #5F6368;
     font-weight: normal;
 }
 
