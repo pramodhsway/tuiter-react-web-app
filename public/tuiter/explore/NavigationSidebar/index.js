@@ -4,14 +4,14 @@ const NavigationSidebar = () => {
           <li class="list-group-item" style="background-color: rgba(231, 233, 234, 0.1); color: white">
               <i class="fab fa-twitter fa-lg"></i>
           </li>
-          <li class="list-group-item" style="background-color: rgba(231, 233, 234, 0.1); color: white" href="#">
+          <li class="list-group-item" style="background-color: rgba(231, 233, 234, 0.1); color: white">
               <div class="grid">
                   <div class="row">
                   <div class="col col-md-1" style="float: left">
                           <i class="fa-solid fa-home"></i>
                       </div>
                       <div class="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style="float: left">
-                          <a href="#">
+                          <a href="../HomeScreen/index.html">
                           Home
                           </a>
                       </div>
