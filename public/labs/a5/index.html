@@ -2,32 +2,70 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <meta charset="UTF-8">
-    <title>JS Tutorial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>A5 Class</title>
 </head>
-
+ 
 <body>
-    <div class="container-fluid">
-        <h1>Welcome to JavaScript</h1>
-        <script>
-            function add(a, b) {
-                return a + b;
-            }
-            document.write(add(13, 25))
-            document.write(`
-                <h2>
-                    ${add(12, 23)} 
-                </h2>
-            `)
-            document.write(`<h1>List</h1>`)
-            document.write(`<ul>`)
-            document.write('<li>Alice</li>')
-            document.write('<li>Charlie</li>')
-            document.write('<li>Bob</li>')
-            document.write('</ul>')
-        </script>
-    </div>
+
+  <div class="container-fluid">
+
+
+
+
+
+<h1>Welcome to Javascript</h1>
+
+<input placeholder="A" id="A"/>
+<input placeholder="B" id="B"/>
+<input placeholder="C" id="C"/>
+
+<button id="addBtn">Add</button>
+<button id="subBtn">Sub</button>
+<button id="mulBtn">Mul</button>
+<button id="divBtn">Div</button>
+
+<br/> 
+
+<!-- <button onclick="add2()">Add</button>
+<button id="subBtn">Sub</button>
+<button id="mulBtn">Mul</button>
+<button id="divBtn">Div</button> -->
+
+<br/> 
+
+
+
+
+<script src="list1.js">
+</script>
+
+
+
+
+  <h1>JSON house</h1>
+  Rooms: <span id="rooms"></span><br/>
+  Baths: <span id="bath"></span><br/>
+  Square Feet: <span id="sqft"></span>
+
+
+
+
+ <h1>Jlist</h1>
+  <ul id="jlist"></ul>
+
+
+
+
+  <script src="house.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <script src="calculator.js"></script>
+
+
+
+  </div>
 </body>
 
 </html>
