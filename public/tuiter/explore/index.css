@@ -3,7 +3,7 @@
     left: 10px;
     top: calc(50% - 12px);
     pointer-events: none;
-    color: #585858;
+    color: #000000;
     z-index: 3;
 }
 
@@ -52,13 +52,13 @@ img {
 
 .wd-news-text {
     font-size: 14px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .wd-follow-text {
     font-size: 14px;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -72,11 +72,12 @@ body {
 
 .wd-user-text {
     font-size: 14px;
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 a:link {
     text-decoration: none;
+    color:#000000
 }
 
 a:visited {
@@ -90,3 +91,9 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+.wd-follow-background{
+    background-color: #323232
+}
+
+a { color: inherit; } 
