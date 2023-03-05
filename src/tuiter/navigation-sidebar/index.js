@@ -10,9 +10,18 @@ const NavigationSidebar = () => {
     const floatLeft = {
         "float": "left"
     }
-    
+
     return (
         <div className="list-group">
+            <Link to="/" className="list-group-item">
+                <div className="grid">
+                    <div className="row">
+                        <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
+                            Labs
+                        </div>
+                    </div>
+                </div>
+            </Link>
             <a className="list-group-item"><i className="fab fa-twitter fa-2x"></i></a>
             <Link to="/tuiter/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
