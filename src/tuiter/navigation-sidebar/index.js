@@ -10,6 +10,7 @@ const NavigationSidebar = () => {
     const floatLeft = {
         "float": "left"
     }
+    
     return (
         <div className="list-group">
             <a className="list-group-item"><i className="fab fa-twitter fa-2x"></i></a>
