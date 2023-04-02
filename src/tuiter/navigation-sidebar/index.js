@@ -1,6 +1,7 @@
 import React, {}  from 'react';
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./index.css";
 
 const NavigationSidebar = () => {
@@ -10,25 +11,15 @@ const NavigationSidebar = () => {
     const floatLeft = {
         "float": "left"
     }
-
     return (
         <div className="list-group">
-            <Link to="/" className="list-group-item">
-                <div className="grid">
-                    <div className="row">
-                        <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
-                            Labs
-                        </div>
-                    </div>
-                </div>
-            </Link>
             <a className="list-group-item"><i className="fab fa-twitter fa-2x"></i></a>
             <Link to="/tuiter/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
-                            <i className="fa-solid fa-home"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-home" />
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
                             Home
@@ -41,10 +32,23 @@ const NavigationSidebar = () => {
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
-                            <i className="fa-solid fa-hashtag"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-hashtag" />
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
                             Explore
+                        </div>
+                    </div>
+                </div>
+            </Link>
+            <Link to="/tuiter/profile" className={`list-group-item
+                    ${active === 'profile'?'active':''}`}>
+                <div className="grid">
+                    <div className="row">
+                        <div className="col col-md-1" style={floatLeft}>
+                        <FontAwesomeIcon icon="fa-solid fa-user" />
+                        </div>
+                        <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
+                            Profile
                         </div>
                     </div>
                 </div>
@@ -54,7 +58,7 @@ const NavigationSidebar = () => {
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
-                            <i className="fa-solid fa-bell"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-bell" /> 
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
                             Notifications
@@ -67,6 +71,7 @@ const NavigationSidebar = () => {
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
+                        <FontAwesomeIcon icon="fa-solid fa-envelope" /> 
                             <i className="fa-solid fa-envelope"></i>
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
@@ -80,6 +85,7 @@ const NavigationSidebar = () => {
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
+                        <FontAwesomeIcon icon="fa-solid fa-bookmark" /> 
                             <i className="fa-solid fa-bookmark"></i>
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
@@ -93,6 +99,7 @@ const NavigationSidebar = () => {
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
+                        <FontAwesomeIcon icon="fa-solid fa-list" /> 
                             <i className="fa-solid fa-list"></i>
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
@@ -102,24 +109,12 @@ const NavigationSidebar = () => {
                 </div>
             </a>
             <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
-                <div className="grid">
-                    <div className="row">
-                        <div className="col col-md-1" style={floatLeft}>
-                            <i className="fa-solid fa-user"></i>
-                        </div>
-                        <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
-                            Profile
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <div className="grid">
                     <div className="row">
                         <div className="col col-md-1" style={floatLeft}>
-                            <i className="fa-solid fa-message"></i>
+                        <FontAwesomeIcon icon="fa-solid fa-list" />
+                        <i className="fa-solid fa-message"></i>
                         </div>
                         <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
                             More
@@ -127,6 +122,15 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </a>
+            <Link to="/" className="list-group-item">
+                <div className="grid">
+                    <div className="row">
+                        <div className="col d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block" style={floatLeft}>
+                            Labs
+                        </div>
+                    </div>
+                </div>
+            </Link>
             <button className="rounded-button">Tweet</button>
         </div>
     );
