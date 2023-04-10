@@ -35,7 +35,7 @@ const TuitItem = (
           <i className="bi bi-x-lg float-end"
              onClick={() => deleteTuitHandler(post._id)}></i>
           <div className="fw-bold">{post.userName}</div>
-          <div>{post.handle}&nbsp;.&nbsp;{post.time}</div>
+          <div>{post.handle}{post.handleName}&nbsp;&middot;{post.time}</div>
         </div>
         <div className="col-12 ps-5">
           <div className="row-cols-11">{post.tuit}</div>
